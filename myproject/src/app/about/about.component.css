@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffb3b3; /* Light gray background color */
+    color: #333;
+    padding: 20px; /* Add padding to body */
+    margin: 0; /* Reset margin to 0 */
+    margin-left: 0;    
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Link styles */
+a {
+    color: #0099cc;
+    text-decoration: none;
+}
+
+/* Link hover effect */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0077cc; /* Darker color on hover */
+}
+
+/* Image styles */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Auto height to maintain aspect ratio */
+    display: block; /* Ensure images don't have extra space below */
+    margin: auto; /* Center images horizontally */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Image hover effect */
+img:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+    transform: scale(0.9); /* Zoom out effect */
+}
+
+/* Food item styles */
+.food-item {
+    border: 4px solid #ccc;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    width: 400px; /* Set width */
+    height: 350px; /* Set height */
+}
+
+.food-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.food-item h2 {
+    margin-bottom: 10px;
+}
+
+/* Basic Button Style */
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #007bff; /* Border Color */
+    color: #007bff; /* Text Color */
+    background-color: transparent; /* Background Color */
+    border-radius: 5px; /* Border Radius */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.custom-btn:hover {
+    background-color: #007bff; /* Background Color on Hover */
+    color: #fff; /* Text Color on Hover */
+}
+
+/* Active/Focus Effect */
+.custom-btn:focus, .custom-btn:active {
+    outline: none;
+    box-shadow: none;
+    border-color: #0056b3; /* Border Color on Focus/Active */
+}
+
+/* Responsive Styles for Buttons */
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 14px;
+    }
+}

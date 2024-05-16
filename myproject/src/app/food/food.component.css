@@ -1,0 +1,141 @@
+.bgcolor{
+        background-color: #DE9A38;
+    }
+       
+
+        .upper images{
+
+             left: 50%;
+             margin-left:450px;
+             width:600px;
+
+
+       }
+
+       
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            list-style: none;
+            margin-top: 10%;
+            padding: 0;
+        }
+
+        .cards_item {
+            display: flex;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card_image {
+            height: calc(13 * 1.2rem);
+            padding: 1.2rem;
+            position: relative;
+        }
+
+        .card_image:before,
+        .card_image:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            left: 60%;
+            top: 0;
+            height: 45px;
+            background: #e6e6e6b8;
+            transform: rotate(45deg);
+        }
+
+        .card_image:after {
+            transform: rotate(-45deg);
+            top: auto;
+            bottom: -22px;
+            left: 40%;
+        }
+
+        .card_image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cards_item {
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 0.25rem;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding-left: 30px;
+            background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px), #66afe1 0 1.2rem) right bottom / 100% 100%, linear-gradient(red 0 0) 30px 0 / 2px 100% #fff;
+            background-repeat: no-repeat;
+            line-height: 1.2rem;
+            -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000) 0 0 / 100% 2.4rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .card_content {
+            padding: 1.2rem;
+        }
+
+    h2.card_title,
+        p {
+            margin: 1.2rem 0;
+            color:#EA5FE3;
+            
+        }
+
+          p {
+
+        color:#16A085 ;
+        background: transparent;
+            }
+
+
+       .card:hover .card_text p {
+    color: white;
+}
+
+
+          
+
+         .imrana{
+             background: transparent;
+            background: #DE9A38;
+            color: #fff;
+        }
+
+       
+
+        html {
+            font-size: 15px;
+        }
+
+        .cards_item:hover .card {
+            background-color: #000;
+        }
+
+        .cards_item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+      
+     
+
+
+
+.logo{
+    height: 10px;
+    width: 10px;
+}
+
+.img {
+    margin-bottom: 5px;
+}

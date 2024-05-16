@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Custom CSS  */
+
+:root {
+    --primary-color: #A82C48;
+    --secondary-color:  #1f6dad;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    color: #A82C48;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: #1f6dad;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    color: #1f6dad;
+    line-height: 3rem;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #1f6dad;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #A82C48;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem;
+    line-height: 1.75rem;
+    background-color: #A82C48;
+    border: 0.1875rem solid #A82C48;
+    color: white-color;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0p 2px 10px -1px rgb(0 0 0 /19%);
+    --webkit-transition: all .4s ease-out 0s;
+    --o-transition: all .4s ease-out 0s;
+    --moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: white-color;
+    border: 0.1875rem solid white-color;
+    color: #555;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    --webkit-transition: all .4s ease-out 0s;
+    --o-transition: all .4s ease-out 0s;
+    --moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.logo{
+    height: 100px;
+    width: 100%;
+}
+.main-btn:hover {
+    background-color: transparent;
+    color: #A82C48;
+}
+
+.main-btn img{
+    height: 20px;
+}
+
+.white-btn:hover {
+    background-color: transparent;
+    color: #A82C48;
+    border-color: #A82C48;
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testinomial-section h2,
+.book-food-text h2 {
+    color: white-color;
+}
+
+/* Custom Scroll Bar  */
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: white-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #A82C48;
+}
+
+/* Header Section */
+
+.navigation-wrap {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    --webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #A82C48;
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* Change Navbar Styling on Scroll  */
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white-color;
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+.navigation-wrap .navbar-brand-img {
+        height: 3.8125rem;
+    }
+
+    .navigation-wrap {
+        text-align: center;
+        background-color: white-color;
+    }
+
+    .navigation-wrap .nav-link {
+        line-height: 1.875rem;
+    }
